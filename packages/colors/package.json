@@ -1,0 +1,18 @@
+{
+  "name": "@liquidrainbowpony/colors",
+  "version": "0.1.0",
+  "description": "The Liquidrainbowpony Color Palette.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "@liquidrainbowpony",
+    "@liquidrainbowpony/colors",
+    "liquidrainbowpony",
+    "liquid-rainbow-pony",
+    "liquidrainbowpony-design-system",
+    "liquidrainbowpony-color-palette"
+  ],
+  "author": "Santiago Deleon <sant@santdeleon.io>",
+}

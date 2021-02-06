@@ -1,1 +1,3 @@
-# The Liquidrainbowpony Design System
+# @liquidrainbowpony
+
+> The Liquidrainbowpony Design System

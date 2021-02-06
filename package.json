@@ -1,7 +1,7 @@
 {
-  "name": "@liquidrainbowpony",
+  "name": "@liquidrainbowpony/core",
   "version": "0.1.0",
-  "description": "The Liquidrainbowpony Design System",
+  "description": "The Liquidrainbowpony Design System.",
   "main": "index.js",
   "private": true,
   "repository": {
@@ -9,11 +9,16 @@
     "url": "git+https://github.com/santdeleon/liquidrainbow.git"
   },
   "keywords": [
+    "@liquidrainbowpony",
+    "@liquidrainbowpony/core",
     "liquidrainbowpony",
     "liquid-rainbow-pony",
     "liquidrainbowpony-design-system"
   ],
-  "author": "Santiago Deleon",
+  "author": "Santiago Deleon <sant@santdeleon.io>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "bugs": {
     "url": "https://github.com/santdeleon/liquidrainbowpony/issues"
   },
