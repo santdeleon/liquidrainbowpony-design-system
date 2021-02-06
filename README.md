@@ -1,1 +1,1 @@
-# The Amoeba Design System
+# The Liquidrainbowpony Design System

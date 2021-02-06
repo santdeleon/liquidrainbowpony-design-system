@@ -1,13 +1,21 @@
 {
-  "name": "liquidrainbowpony",
+  "name": "@liquidrainbowpony",
   "version": "0.1.0",
   "description": "The Liquidrainbowpony Design System",
   "main": "index.js",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santdeleon/liquidrainbow.git"
+  },
   "keywords": [
     "liquidrainbowpony",
     "liquid-rainbow-pony",
     "liquidrainbowpony-design-system"
   ],
-  "author": "Santiago Deleon"
+  "author": "Santiago Deleon",
+  "bugs": {
+    "url": "https://github.com/santdeleon/liquidrainbowpony/issues"
+  },
+  "homepage": "https://github.com/santdeleon/liquidrainbowpony#readme"
 }
