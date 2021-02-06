@@ -1,0 +1,12 @@
+{
+  "name": "amoeba",
+  "version": "0.1.0",
+  "description": "The Amoeba Design System",
+  "main": "index.js",
+  "private": true,
+  "keywords": [
+    "amoeba",
+    "amoeba-design-system"
+  ],
+  "author": "Santiago Deleon"
+}
