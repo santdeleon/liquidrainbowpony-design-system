@@ -1,12 +1,13 @@
 {
-  "name": "amoeba",
+  "name": "liquidrainbowpony",
   "version": "0.1.0",
-  "description": "The Amoeba Design System",
+  "description": "The Liquidrainbowpony Design System",
   "main": "index.js",
   "private": true,
   "keywords": [
-    "amoeba",
-    "amoeba-design-system"
+    "liquidrainbowpony",
+    "liquid-rainbow-pony",
+    "liquidrainbowpony-design-system"
   ],
   "author": "Santiago Deleon"
 }
