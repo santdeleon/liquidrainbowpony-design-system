@@ -11,7 +11,7 @@
     "liquidrainbowpony-design-system"
   ],
   "main": "build/tokens.js",
-  "style": "build/tokens.scss",
+  "style": "build/tokens.css",
   "files": [
     "build/*"
   ],
