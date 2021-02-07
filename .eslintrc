@@ -7,10 +7,7 @@
   "extends": [
     "react-app",
     "plugin:prettier/recommended",
-    "plugin:react/recommended",
-    "plugin:testing-library/recommended",
-    "plugin:testing-library/react",
-    "plugin:jest-dom/recommended"
+    "plugin:react/recommended"
   ],
   "ignorePatterns": ["node_modules/**/*"],
   "parserOptions": {

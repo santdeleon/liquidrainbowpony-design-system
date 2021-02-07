@@ -1,22 +1,26 @@
 const path = require('path');
 
 const StyleDictionary = require('style-dictionary').extend({
-  source: [path.resolve(__dirname, 'figma/properties/**/*.json')],
+  source: [path.resolve(__dirname, 'src/properties/**/*.json')],
   platforms: {
     web: {
       transformGroup: 'web',
       buildPath: 'build/',
       files: [
         {
-          destination: 'colors.css',
+          destination: 'tokens.css',
           format: 'css/variables',
         },
         {
-          destination: 'colors.js',
+          destination: 'tokens.scss',
+          format: 'scss/variables',
+        },
+        {
+          destination: 'tokens.js',
           format: 'javascript/object',
         },
         {
-          destination: 'colors.json',
+          destination: 'tokens.json',
           format: 'json',
         },
       ],
