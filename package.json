@@ -1,6 +1,6 @@
 {
   "author": "Santiago Deleon <sant@santdeleon.io>",
-  "name": "@liquidrainbowpony/core",
+  "name": "@liquidrainbowpony/liquidrainbowpony",
   "version": "0.1.0",
   "description": "The Liquidrainbowpony Design System.",
   "main": "index.js",
