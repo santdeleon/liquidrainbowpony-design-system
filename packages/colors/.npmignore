@@ -1,2 +1,9 @@
-.DS_Store
 build
+dist
+properties
+node_modules
+.DS_Store
+.env*
+npm-debug*
+yarn-debug*
+yarn-error*

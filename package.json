@@ -1,4 +1,5 @@
 {
+  "author": "Santiago Deleon <sant@santdeleon.io>",
   "name": "@liquidrainbowpony/core",
   "version": "0.1.0",
   "description": "The Liquidrainbowpony Design System.",
@@ -15,7 +16,6 @@
     "liquid-rainbow-pony",
     "liquidrainbowpony-design-system"
   ],
-  "author": "Santiago Deleon <sant@santdeleon.io>",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

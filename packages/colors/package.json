@@ -2,10 +2,7 @@
   "name": "@liquidrainbowpony/colors",
   "version": "0.1.0",
   "description": "The Liquidrainbowpony Color Palette.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Santiago Deleon <sant@santdeleon.io>",
   "keywords": [
     "@liquidrainbowpony",
     "@liquidrainbowpony/colors",
@@ -14,5 +11,25 @@
     "liquidrainbowpony-design-system",
     "liquidrainbowpony-color-palette"
   ],
-  "author": "Santiago Deleon <sant@santdeleon.io>",
+  "main": "build/colors.js",
+  "style": "build/colors.css",
+  "files": [
+    "build/*"
+  ],
+  "scripts": {
+    "build": "run-s build:clean build:colors build:style-dictionary",
+    "build:clean": "rm -rf ./properties ./build",
+    "build:colors": "node \"./figma/index.js\"",
+    "build:style-dictionary": "style-dictionary build"
+  },
+  "publishConfig": {
+    "access": "private"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "npm-run-all": "^4.1.5",
+    "style-dictionary": "^2.10.2"
+  },
+  "json": "build/colors.json"
 }
