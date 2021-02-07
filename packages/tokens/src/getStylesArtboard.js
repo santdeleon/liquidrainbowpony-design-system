@@ -25,10 +25,10 @@ module.exports = async function getStylesArtboard(figmaApiKey, figmaId) {
   );
 
   return {
-    token: {
+    tokens: {
       // grids: getGrids(stylesArtboard),
       // spacers: getSpacers(stylesArtboard),
-      color: getColorPalette(paletteArtboard),
+      colors: getColorPalette(paletteArtboard),
       // fonts: getFontStyles(stylesArtboard),
     },
   };
