@@ -1,5 +1,7 @@
 const fetch = require('node-fetch');
 const getColorPalette = require('./getColorPalette');
+const getSpacers = require('./getSpacers');
+// const getTypography = require('./getTypography');
 
 module.exports = async function getStylesArtboard(figmaApiKey, figmaId) {
   const result = await fetch('https://api.figma.com/v1/files/' + figmaId, {
@@ -24,12 +26,14 @@ module.exports = async function getStylesArtboard(figmaApiKey, figmaId) {
     (page) => page.name === '02. Colors',
   );
 
+  const spacersArtboard = stylesArtboard.find(
+    (page) => page.name === '04. Spacers',
+  );
+
   return {
-    tokens: {
-      // grids: getGrids(stylesArtboard),
-      // spacers: getSpacers(stylesArtboard),
-      colors: getColorPalette(paletteArtboard),
-      // fonts: getFontStyles(stylesArtboard),
-    },
+    colors: getColorPalette(paletteArtboard),
+    spacers: getSpacers(spacersArtboard),
+    // grids: getGrids(stylesArtboard),
+    // fonts: getTypography(stylesArtboard),
   };
 };
