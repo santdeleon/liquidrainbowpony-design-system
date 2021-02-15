@@ -1,85 +1,81 @@
-module.exports = function getTypography(stylesArtboard) {
-  // empty 'spacers obj' wheree we will store all colors
-  const typography = {};
-  // get 'spacers' artboard
-  const typographyArtboard = stylesArtboard.filter((item) => {
-    return item.name === 'typography';
-  })[0].children;
+module.exports = (typographyArtboard) => {
+  const sizeLayer = typographyArtboard?.children?.find(
+    (l) => l.name === 'Size',
+  );
+  const weightLayer = typographyArtboard?.children?.find(
+    (l) => l.name === 'Weight',
+  );
+  const familyLayer = typographyArtboard?.children?.find(
+    (l) => l.name === 'Family',
+  );
 
-  typographyArtboard.map((fontItem, i) => {
-    if (fontItem.children) {
-      let subFonts = {};
+  const size = sizeLayer?.children?.reduce(
+    (accumulatingGroup, currentGroup) => {
+      let sizeInRem = '';
 
-      // get all sub fonts
-      fontItem.children.map((subFontItem) => {
-        let subFontObj = {
-          [subFontItem.name]: {
-            family: {
-              value: `${subFontItem.style.fontFamily}`,
-              type: 'typography',
-            },
-            size: {
-              value: `${subFontItem.style.fontSize}px`,
-              type: 'typography',
-            },
-            weight: {
-              value: subFontItem.style.fontWeight,
-              type: 'typography',
-            },
-            lineheight: {
-              value: `${subFontItem.style.lineHeightPercent}%`,
-              type: 'typography',
-            },
-            spacing: {
-              value:
-                subFontItem.style.letterSpacing !== 0
-                  ? `${subFontItem.style.letterSpacing}px`
-                  : 'normal',
-              type: 'typography',
-            },
-          },
-        };
-        // merge multiple subfonts objects into one
-        Object.assign(subFonts, subFontObj);
-      });
+      if (currentGroup.style.fontSize === 12) sizeInRem = 0.75;
+      if (currentGroup.style.fontSize === 16) sizeInRem = 1;
+      if (currentGroup.style.fontSize === 18) sizeInRem = 1.125;
+      if (currentGroup.style.fontSize === 20) sizeInRem = 1.25;
+      if (currentGroup.style.fontSize === 21) sizeInRem = 1.3125;
+      if (currentGroup.style.fontSize === 24) sizeInRem = 1.5;
+      if (currentGroup.style.fontSize === 32) sizeInRem = 2;
+      if (currentGroup.style.fontSize === 43) sizeInRem = 2.6875;
+      if (currentGroup.style.fontSize === 57) sizeInRem = 3.5625;
+      if (currentGroup.style.fontSize === 76) sizeInRem = 4.75;
+      if (currentGroup.style.fontSize === 101) sizeInRem = 6.3125;
+      if (currentGroup.style.fontSize === 135) sizeInRem = 8.4375;
 
-      let fontObj = {
-        [fontItem.name]: subFonts,
-      };
-
-      Object.assign(typography, fontObj);
-    } else {
-      let fontObj = {
-        [fontItem.name]: {
-          family: {
-            value: `${fontItem.style.fontFamily}, ${fontItem.style.fontPostScriptName}`,
-            type: 'typography',
-          },
+      return {
+        ...accumulatingGroup,
+        [`${currentGroup.name}`]: {
           size: {
-            value: fontItem.style.fontSize,
+            value: `${currentGroup.style.fontSize}px`,
             type: 'typography',
           },
-          weight: {
-            value: fontItem.style.fontWeight,
+          rem: {
+            value: `${sizeInRem}rem`,
             type: 'typography',
           },
-          lineheight: {
-            value: `${fontItem.style.lineHeightPercent}%`,
-            type: 'typography',
-          },
-          spacing: {
-            value:
-              fontItem.style.letterSpacing !== 0
-                ? `${fontItem.style.letterSpacing}px`
-                : 'normal',
+          lineHeight: {
+            value: currentGroup.style.lineHeightPercent,
             type: 'typography',
           },
         },
       };
+    },
+    {},
+  );
 
-      Object.assign(typography, fontObj);
-    }
-  });
+  const weight = weightLayer?.children?.reduce(
+    (accumulatingGroup, currentGroup) => {
+      return {
+        ...accumulatingGroup,
+        [`${currentGroup.name}`]: {
+          value: currentGroup.style.fontWeight,
+          type: 'typography',
+        },
+      };
+    },
+    {},
+  );
 
-  return typography;
+  const family = familyLayer?.children?.reduce(
+    (accumulatingGroup, currentGroup) => {
+      return {
+        ...accumulatingGroup,
+        [`${currentGroup.name}`]: {
+          value: currentGroup.style.fontFamily,
+          type: 'typography',
+        },
+      };
+    },
+    {},
+  );
+
+  return {
+    ...size,
+    weight,
+    family,
+  };
 };

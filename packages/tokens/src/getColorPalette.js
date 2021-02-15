@@ -1,9 +1,9 @@
 module.exports = (paletteArtboard) => {
-  const colorPalette = paletteArtboard.children.find(
+  const colorPalette = paletteArtboard?.children?.find(
     (group) => group.name === 'Color Palette',
   );
 
-  const colors = colorPalette?.children?.reduce(
+  return colorPalette?.children?.reduce(
     (accumulatingPalette, paletteGroup) => ({
       ...accumulatingPalette,
       ...paletteGroup?.children?.reduce(
@@ -34,6 +34,4 @@ module.exports = (paletteArtboard) => {
     }),
     {},
   );
-
-  return colors;
 };
