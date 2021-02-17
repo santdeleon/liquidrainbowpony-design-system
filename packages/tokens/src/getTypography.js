@@ -29,7 +29,7 @@ module.exports = (typographyArtboard) => {
       return {
         ...accumulatingGroup,
         [`${currentGroup.name}`]: {
-          size: {
+          px: {
             value: `${currentGroup.style.fontSize}px`,
             type: 'typography',
           },
@@ -38,7 +38,7 @@ module.exports = (typographyArtboard) => {
             type: 'typography',
           },
           lineHeight: {
-            value: currentGroup.style.lineHeightPercent,
+            value: `${currentGroup.style.lineHeightPercent}%`,
             type: 'typography',
           },
         },
@@ -74,7 +74,7 @@ module.exports = (typographyArtboard) => {
   );
 
   return {
-    ...size,
+    size,
     weight,
     family,
   };

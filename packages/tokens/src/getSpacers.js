@@ -21,12 +21,14 @@ module.exports = (spacersArtboard) =>
         return {
           ...accumulatingSpacers,
           [`${spacersGroup.name}`]: {
-            value: heightInPx,
-            type: 'spacer',
-          },
-          [`${spacersGroup.name}.rem`]: {
-            value: heightInRem,
-            type: 'spacer',
+            px: {
+              value: heightInPx,
+              type: 'spacer',
+            },
+            rem: {
+              value: heightInRem,
+              type: 'spacer',
+            },
           },
         };
       }
