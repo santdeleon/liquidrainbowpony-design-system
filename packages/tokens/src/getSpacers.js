@@ -5,10 +5,13 @@ module.exports = (spacersArtboard) =>
 
       if (layer) {
         const height = layer.absoluteBoundingBox.height;
-        const heightInPx = `${layer.absoluteBoundingBox.height}px`;
+        let heightInPx = `${layer.absoluteBoundingBox.height}px`;
         let heightInRem = '';
 
-        if (height === 0) heightInRem = '0rem';
+        if (height <= 1) {
+          heightInRem = '0rem';
+          heightInPx = '0px';
+        }
         if (height === 2) heightInRem = '0.1rem';
         if (height === 4) heightInRem = '0.2rem';
         if (height === 8) heightInRem = '0.4rem';

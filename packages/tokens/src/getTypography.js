@@ -13,7 +13,7 @@ module.exports = (typographyArtboard) => {
     (accumulatingGroup, currentGroup) => {
       let sizeInRem = '';
 
-      if (currentGroup.style.fontSize === 12) sizeInRem = 0.75;
+      if (currentGroup.style.fontSize === 13) sizeInRem = 0.8125;
       if (currentGroup.style.fontSize === 16) sizeInRem = 1;
       if (currentGroup.style.fontSize === 18) sizeInRem = 1.125;
       if (currentGroup.style.fontSize === 20) sizeInRem = 1.25;
@@ -38,7 +38,7 @@ module.exports = (typographyArtboard) => {
             type: 'typography',
           },
           lineHeight: {
-            value: `${currentGroup.style.lineHeightPercent}%`,
+            value: `${currentGroup.style.lineHeightPercentFontSize}%`,
             type: 'typography',
           },
         },
