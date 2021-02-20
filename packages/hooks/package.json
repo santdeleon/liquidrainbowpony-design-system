@@ -1,0 +1,17 @@
+{
+  "author": "Santiago Deleon <sant@santdeleon.io>",
+  "name": "@liquidrainbowpony/hooks",
+  "version": "0.1.0",
+  "description": "The Liquidrainbowpony React hook library.",
+  "keywords": [
+    "@liquidrainbowpony",
+    "@liquidrainbowpony/hooks",
+    "liquidrainbowpony",
+    "liquid-rainbow-pony",
+    "liquidrainbowpony-design-system"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
