@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { ThemeContext } from '../theme'; // TODO: import via NPM
+import { ThemeContext } from '@liquidrainbow/theme';
 
 const useTheme = () => {
   const context = useContext(ThemeContext);
