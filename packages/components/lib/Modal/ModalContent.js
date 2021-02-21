@@ -1,30 +1,23 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = void 0;
+exports['default'] = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/taggedTemplateLiteral'),
+);
 
 var _styledComponents = _interopRequireDefault(require('styled-components'));
 
 var _templateObject;
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-  return Object.freeze(
-    Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }),
-  );
-}
-
-var ModalContent = _styledComponents.default.div(
+var ModalContent = _styledComponents['default'].div(
   _templateObject ||
-    (_templateObject = _taggedTemplateLiteral([
+    (_templateObject = (0, _taggedTemplateLiteral2['default'])([
       '\n  z-index: 3;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-color: ',
       ';\n  border-radius: 0.5rem;\n  border-style: solid;\n  border-width: 2px;\n  border-color: ',
       ';\n  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.1),\n    0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.1);\n  animation-name: animatetop;\n  animation-duration: 1s;\n  animation-timing-function: cubic-bezier(0.4, 1, 0.5, 1);\n  width: ',
@@ -49,4 +42,4 @@ var ModalContent = _styledComponents.default.div(
 );
 
 var _default = ModalContent;
-exports.default = _default;
+exports['default'] = _default;

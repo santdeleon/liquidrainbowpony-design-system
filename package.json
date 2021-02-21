@@ -2,23 +2,21 @@
   "author": "Santiago Deleon <sant@santdeleon.io>",
   "name": "@liquidrainbowpony/liquidrainbowpony",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "private"
+  },
   "description": "The Liquidrainbowpony Design System.",
-  "main": "index.js",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/santdeleon/liquidrainbow.git"
   },
   "keywords": [
     "@liquidrainbowpony",
-    "@liquidrainbowpony/core",
+    "@liquidrainbowpony/liquidrainbowpony",
     "liquidrainbowpony",
     "liquid-rainbow-pony",
     "liquidrainbowpony-design-system"
   ],
-  "scripts": {
-    "start": "react-scripts start"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -46,10 +44,8 @@
     "husky": "^4.3.6",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
-    "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "^4.0.1",
-    "styled-components": "^5.2.1"
+    "react-scripts": "^4.0.2"
   }
 }

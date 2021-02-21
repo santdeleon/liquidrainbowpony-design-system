@@ -1,84 +1,86 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
 Object.defineProperty(exports, 'Small', {
   enumerable: true,
   get: function get() {
-    return _Small.default;
+    return _Small['default'];
   },
 });
 Object.defineProperty(exports, 'P', {
   enumerable: true,
   get: function get() {
-    return _P.default;
+    return _P['default'];
   },
 });
 Object.defineProperty(exports, 'PLead', {
   enumerable: true,
   get: function get() {
-    return _PLead.default;
+    return _PLead['default'];
   },
 });
 Object.defineProperty(exports, 'PLeadLarge', {
   enumerable: true,
   get: function get() {
-    return _PLeadLarge.default;
+    return _PLeadLarge['default'];
   },
 });
 Object.defineProperty(exports, 'H5', {
   enumerable: true,
   get: function get() {
-    return _H.default;
+    return _H['default'];
   },
 });
 Object.defineProperty(exports, 'H4', {
   enumerable: true,
   get: function get() {
-    return _H2.default;
+    return _H2['default'];
   },
 });
 Object.defineProperty(exports, 'H3', {
   enumerable: true,
   get: function get() {
-    return _H3.default;
+    return _H3['default'];
   },
 });
 Object.defineProperty(exports, 'H2', {
   enumerable: true,
   get: function get() {
-    return _H4.default;
+    return _H4['default'];
   },
 });
 Object.defineProperty(exports, 'H1', {
   enumerable: true,
   get: function get() {
-    return _H5.default;
+    return _H5['default'];
   },
 });
 Object.defineProperty(exports, 'Display3', {
   enumerable: true,
   get: function get() {
-    return _Display.default;
+    return _Display['default'];
   },
 });
 Object.defineProperty(exports, 'Display2', {
   enumerable: true,
   get: function get() {
-    return _Display2.default;
+    return _Display2['default'];
   },
 });
 Object.defineProperty(exports, 'Display1', {
   enumerable: true,
   get: function get() {
-    return _Display3.default;
+    return _Display3['default'];
   },
 });
 Object.defineProperty(exports, 'Text', {
   enumerable: true,
   get: function get() {
-    return _Text.default;
+    return _Text['default'];
   },
 });
 
@@ -107,7 +109,3 @@ var _Display2 = _interopRequireDefault(require('./Display2'));
 var _Display3 = _interopRequireDefault(require('./Display1'));
 
 var _Text = _interopRequireDefault(require('./Text'));
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}

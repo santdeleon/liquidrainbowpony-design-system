@@ -1,30 +1,23 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = void 0;
+exports['default'] = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/taggedTemplateLiteral'),
+);
 
 var _styledComponents = _interopRequireDefault(require('styled-components'));
 
 var _templateObject;
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-  return Object.freeze(
-    Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }),
-  );
-}
-
-var ButtonBase = _styledComponents.default.button(
+var ButtonBase = _styledComponents['default'].button(
   _templateObject ||
-    (_templateObject = _taggedTemplateLiteral([
+    (_templateObject = (0, _taggedTemplateLiteral2['default'])([
       '\n  cursor: pointer;\n  position: relative;\n  display: ',
       ';\n  padding: ',
       ';\n  margin: ',
@@ -58,4 +51,4 @@ var ButtonBase = _styledComponents.default.button(
 );
 
 var _default = ButtonBase;
-exports.default = _default;
+exports['default'] = _default;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = void 0;
+exports['default'] = void 0;
 
 var _react = require('react');
 
@@ -16,4 +16,4 @@ var useTheme = function useTheme() {
 };
 
 var _default = useTheme;
-exports.default = _default;
+exports['default'] = _default;

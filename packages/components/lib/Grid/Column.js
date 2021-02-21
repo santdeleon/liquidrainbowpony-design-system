@@ -1,30 +1,23 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = exports.AutoColumn = void 0;
+exports['default'] = exports.AutoColumn = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/taggedTemplateLiteral'),
+);
 
 var _styledComponents = _interopRequireDefault(require('styled-components'));
 
 var _templateObject, _templateObject2;
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-  return Object.freeze(
-    Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }),
-  );
-}
-
-var Column = _styledComponents.default.div(
+var Column = _styledComponents['default'].div(
   _templateObject ||
-    (_templateObject = _taggedTemplateLiteral([
+    (_templateObject = (0, _taggedTemplateLiteral2['default'])([
       '\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  width: ',
       ';\n  align-items: ',
       ';\n  margin: ',
@@ -49,9 +42,9 @@ var Column = _styledComponents.default.div(
   },
 );
 
-var AutoColumn = _styledComponents.default.div(
+var AutoColumn = _styledComponents['default'].div(
   _templateObject2 ||
-    (_templateObject2 = _taggedTemplateLiteral([
+    (_templateObject2 = (0, _taggedTemplateLiteral2['default'])([
       '\n  display: grid;\n  grid-auto-rows: auto;\n  grid-row-gap: ',
       ';\n  justify-items: ',
       ';\n  margin: ',
@@ -83,4 +76,4 @@ var AutoColumn = _styledComponents.default.div(
 
 exports.AutoColumn = AutoColumn;
 var _default = Column;
-exports.default = _default;
+exports['default'] = _default;

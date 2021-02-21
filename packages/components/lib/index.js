@@ -1,12 +1,14 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
 Object.defineProperty(exports, 'Box', {
   enumerable: true,
   get: function get() {
-    return _Box.default;
+    return _Box['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonPrimary', {
@@ -72,13 +74,13 @@ Object.defineProperty(exports, 'ButtonDropdownLink', {
 Object.defineProperty(exports, 'Emoji', {
   enumerable: true,
   get: function get() {
-    return _Emoji.default;
+    return _Emoji['default'];
   },
 });
 Object.defineProperty(exports, 'Img', {
   enumerable: true,
   get: function get() {
-    return _Img.default;
+    return _Img['default'];
   },
 });
 Object.defineProperty(exports, 'Modal', {
@@ -263,7 +265,3 @@ var _Text = require('./Text');
 var _ToggleSwitch = require('./ToggleSwitch');
 
 var _Tooltip = require('./Tooltip');
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}

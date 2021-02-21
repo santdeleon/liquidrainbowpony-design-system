@@ -1,28 +1,25 @@
 'use strict';
 
-function _typeof(obj) {
-  '@babel/helpers - typeof';
-  if (typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol') {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj &&
-        typeof Symbol === 'function' &&
-        obj.constructor === Symbol &&
-        obj !== Symbol.prototype
-        ? 'symbol'
-        : typeof obj;
-    };
-  }
-  return _typeof(obj);
-}
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
+var _interopRequireWildcard = require('@babel/runtime/helpers/interopRequireWildcard');
 
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = void 0;
+exports['default'] = void 0;
+
+var _extends2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/extends'),
+);
+
+var _objectWithoutProperties2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/objectWithoutProperties'),
+);
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/taggedTemplateLiteral'),
+);
 
 var _react = _interopRequireWildcard(require('react'));
 
@@ -34,113 +31,9 @@ var _hooks = require('@liquidrainbowpony/hooks');
 
 var _templateObject;
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _getRequireWildcardCache() {
-  if (typeof WeakMap !== 'function') return null;
-  var cache = new WeakMap();
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
-  return cache;
-}
-
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
-    return obj;
-  }
-  if (
-    obj === null ||
-    (_typeof(obj) !== 'object' && typeof obj !== 'function')
-  ) {
-    return { default: obj };
-  }
-  var cache = _getRequireWildcardCache();
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-  var newObj = {};
-  var hasPropertyDescriptor =
-    Object.defineProperty && Object.getOwnPropertyDescriptor;
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor
-        ? Object.getOwnPropertyDescriptor(obj, key)
-        : null;
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-  newObj.default = obj;
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-  return newObj;
-}
-
-function _extends() {
-  _extends =
-    Object.assign ||
-    function (target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key];
-          }
-        }
-      }
-      return target;
-    };
-  return _extends.apply(this, arguments);
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-  var key, i;
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-  return target;
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-  return Object.freeze(
-    Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }),
-  );
-}
-
-var StyledButtonDropdownMenu = _styledComponents.default.div(
+var StyledButtonDropdownMenu = _styledComponents['default'].div(
   _templateObject ||
-    (_templateObject = _taggedTemplateLiteral([
+    (_templateObject = (0, _taggedTemplateLiteral2['default'])([
       '\n  outline: 0;\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  transform: translateX(-50%);\n  margin-top: var(--spacer-size-400-rem);\n  flex-direction: column;\n  text-align: ',
       ';\n  width: ',
       ';\n  color: ',
@@ -211,7 +104,7 @@ var ButtonDropdownMenu = function ButtonDropdownMenu(_ref8) {
     ariaDescribedBy = _ref8.ariaDescribedBy,
     ariaLabel = _ref8.ariaLabel,
     children = _ref8.children,
-    props = _objectWithoutProperties(_ref8, [
+    props = (0, _objectWithoutProperties2['default'])(_ref8, [
       'id',
       'show',
       'setShow',
@@ -219,15 +112,14 @@ var ButtonDropdownMenu = function ButtonDropdownMenu(_ref8) {
       'ariaLabel',
       'children',
     ]);
-
-  var ref = (0, _react.createRef)();
+  var ref = /*#__PURE__*/ (0, _react.createRef)();
   (0, _hooks.useOnClickOutside)(ref, function () {
     return setShow(false);
   });
   if (!show) return null;
-  return /*#__PURE__*/ _react.default.createElement(
+  return /*#__PURE__*/ _react['default'].createElement(
     StyledButtonDropdownMenu,
-    _extends(
+    (0, _extends2['default'])(
       {
         ref: ref,
         show: show,
@@ -245,4 +137,4 @@ var ButtonDropdownMenu = function ButtonDropdownMenu(_ref8) {
 
 ButtonDropdownMenu.propTypes = propTypes;
 var _default = ButtonDropdownMenu;
-exports.default = _default;
+exports['default'] = _default;

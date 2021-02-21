@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = void 0;
+exports['default'] = void 0;
 
 var _react = require('react');
 
@@ -52,7 +52,7 @@ function _createForOfIteratorHelper(o, allowArrayLike) {
     },
     f: function f() {
       try {
-        if (!normalCompletion && it.return != null) it.return();
+        if (!normalCompletion && it['return'] != null) it['return']();
       } finally {
         if (didErr) throw err;
       }
@@ -123,4 +123,4 @@ var useOnClickOutside = function useOnClickOutside(ref, handler, events) {
 };
 
 var _default = useOnClickOutside;
-exports.default = _default;
+exports['default'] = _default;

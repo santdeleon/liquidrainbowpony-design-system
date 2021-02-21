@@ -1,9 +1,15 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = void 0;
+exports['default'] = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/taggedTemplateLiteral'),
+);
 
 var _react = _interopRequireDefault(require('react'));
 
@@ -13,22 +19,11 @@ var _styledComponents = _interopRequireDefault(require('styled-components'));
 
 var _templateObject;
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-  return Object.freeze(
-    Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }),
-  );
-}
-
-var StyledModalScreenReaderText = _styledComponents.default.div(
+var StyledModalScreenReaderText = _styledComponents['default'].div(
   _templateObject ||
-    (_templateObject = _taggedTemplateLiteral(['\n  display: none;\n'])),
+    (_templateObject = (0, _taggedTemplateLiteral2['default'])([
+      '\n  display: none;\n',
+    ])),
 );
 
 var propTypes = {
@@ -37,7 +32,7 @@ var propTypes = {
 
 var ModalScreenReaderText = function ModalScreenReaderText(_ref) {
   var title = _ref.title;
-  return /*#__PURE__*/ _react.default.createElement(
+  return /*#__PURE__*/ _react['default'].createElement(
     StyledModalScreenReaderText,
     null,
     'This is a dialog window which overlays the main content of the page. The modal begins with a heading 2 titled "',
@@ -48,4 +43,4 @@ var ModalScreenReaderText = function ModalScreenReaderText(_ref) {
 
 ModalScreenReaderText.propTypes = propTypes;
 var _default = ModalScreenReaderText;
-exports.default = _default;
+exports['default'] = _default;

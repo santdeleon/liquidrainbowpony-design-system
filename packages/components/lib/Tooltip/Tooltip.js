@@ -1,28 +1,25 @@
 'use strict';
 
-function _typeof(obj) {
-  '@babel/helpers - typeof';
-  if (typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol') {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj &&
-        typeof Symbol === 'function' &&
-        obj.constructor === Symbol &&
-        obj !== Symbol.prototype
-        ? 'symbol'
-        : typeof obj;
-    };
-  }
-  return _typeof(obj);
-}
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
+var _interopRequireWildcard = require('@babel/runtime/helpers/interopRequireWildcard');
 
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports.default = void 0;
+exports['default'] = void 0;
+
+var _extends2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/extends'),
+);
+
+var _objectWithoutProperties2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/objectWithoutProperties'),
+);
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(
+  require('@babel/runtime/helpers/taggedTemplateLiteral'),
+);
 
 var _react = _interopRequireDefault(require('react'));
 
@@ -32,113 +29,9 @@ var _styledComponents = _interopRequireWildcard(require('styled-components'));
 
 var _templateObject;
 
-function _getRequireWildcardCache() {
-  if (typeof WeakMap !== 'function') return null;
-  var cache = new WeakMap();
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
-  return cache;
-}
-
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
-    return obj;
-  }
-  if (
-    obj === null ||
-    (_typeof(obj) !== 'object' && typeof obj !== 'function')
-  ) {
-    return { default: obj };
-  }
-  var cache = _getRequireWildcardCache();
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-  var newObj = {};
-  var hasPropertyDescriptor =
-    Object.defineProperty && Object.getOwnPropertyDescriptor;
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor
-        ? Object.getOwnPropertyDescriptor(obj, key)
-        : null;
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-  newObj.default = obj;
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-  return newObj;
-}
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _extends() {
-  _extends =
-    Object.assign ||
-    function (target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key];
-          }
-        }
-      }
-      return target;
-    };
-  return _extends.apply(this, arguments);
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-  var key, i;
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-  return target;
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-  return Object.freeze(
-    Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }),
-  );
-}
-
-var TooltipBase = _styledComponents.default.span(
+var TooltipBase = _styledComponents['default'].span(
   _templateObject ||
-    (_templateObject = _taggedTemplateLiteral([
+    (_templateObject = (0, _taggedTemplateLiteral2['default'])([
       '\n  visibility: hidden;\n  position: absolute;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  text-align: center;\n  z-index: 1;\n  outline: 0;\n  width: ',
       ';\n  padding: var(--spacer-size-400-rem);\n  font-weight: var(--typography-weight-medium);\n  color: ',
       ';\n  background-color: ',
@@ -182,11 +75,13 @@ var propTypes = {
 var Tooltip = function Tooltip(_ref5) {
   var ariaLabel = _ref5.ariaLabel,
     children = _ref5.children,
-    props = _objectWithoutProperties(_ref5, ['ariaLabel', 'children']);
-
-  return /*#__PURE__*/ _react.default.createElement(
+    props = (0, _objectWithoutProperties2['default'])(_ref5, [
+      'ariaLabel',
+      'children',
+    ]);
+  return /*#__PURE__*/ _react['default'].createElement(
     TooltipBase,
-    _extends(
+    (0, _extends2['default'])(
       {
         tabIndex: '-1',
         'aria-label': ariaLabel,
@@ -201,4 +96,4 @@ Tooltip.propTypes = propTypes;
 
 var _default = (0, _styledComponents.withTheme)(Tooltip);
 
-exports.default = _default;
+exports['default'] = _default;

@@ -1,48 +1,50 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
 Object.defineProperty(exports, 'ButtonPrimary', {
   enumerable: true,
   get: function get() {
-    return _ButtonPrimary.default;
+    return _ButtonPrimary['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonSecondary', {
   enumerable: true,
   get: function get() {
-    return _ButtonSecondary.default;
+    return _ButtonSecondary['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonSuccess', {
   enumerable: true,
   get: function get() {
-    return _ButtonSuccess.default;
+    return _ButtonSuccess['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonWarning', {
   enumerable: true,
   get: function get() {
-    return _ButtonWarning.default;
+    return _ButtonWarning['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonDanger', {
   enumerable: true,
   get: function get() {
-    return _ButtonDanger.default;
+    return _ButtonDanger['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonLink', {
   enumerable: true,
   get: function get() {
-    return _ButtonLink.default;
+    return _ButtonLink['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonTransparent', {
   enumerable: true,
   get: function get() {
-    return _ButtonTransparent.default;
+    return _ButtonTransparent['default'];
   },
 });
 Object.defineProperty(exports, 'ButtonDropdown', {
@@ -79,7 +81,3 @@ var _ButtonLink = _interopRequireDefault(require('./ButtonLink'));
 var _ButtonTransparent = _interopRequireDefault(require('./ButtonTransparent'));
 
 var _ButtonDropdown = require('./ButtonDropdown');
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
