@@ -1,7 +1,6 @@
 import React, { createContext } from 'react';
 import { ThemeProvider as StyledComponentsThemeProvider } from 'styled-components';
 import { oneOfType, array, object, func } from 'prop-types';
-
 import { useLocalStorage } from '@liquidrainbow/hooks';
 
 export const ThemeContext = createContext();

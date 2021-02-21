@@ -10,8 +10,25 @@
     "liquid-rainbow-pony",
     "liquidrainbowpony-design-system"
   ],
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@liquidrainbowpony/theme": "/Users/Sant/Desktop/code/projects/@liquidrainbowpony/packages/theme",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+   "@babel/cli": "^7.2.3",
+   "@babel/core": "7.3.3",
+   "@babel/preset-env": "7.3.1",
+   "@babel/preset-react": "7.0.0",
+   "babel-jest": "^24.7.1",
+   "babel-loader": "8.0.5"
+ }
 }

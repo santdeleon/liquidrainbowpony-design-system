@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-
 import { ThemeContext } from '@liquidrainbow/theme';
 
 const useTheme = () => {
