@@ -1,3 +1,5 @@
+'use strict';
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
@@ -5,7 +7,7 @@ exports.default = void 0;
 
 var _react = require('react');
 
-var _theme = require('@liquidrainbow/theme');
+var _theme = require('@liquidrainbowpony/theme');
 
 var useTheme = function useTheme() {
   var context = (0, _react.useContext)(_theme.ThemeContext);

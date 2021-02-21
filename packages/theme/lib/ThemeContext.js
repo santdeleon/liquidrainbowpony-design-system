@@ -1,3 +1,5 @@
+'use strict';
+
 function _typeof(obj) {
   '@babel/helpers - typeof';
   if (typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol') {
@@ -28,7 +30,7 @@ var _styledComponents = require('styled-components');
 
 var _propTypes = require('prop-types');
 
-var _hooks = require('@liquidrainbow/hooks');
+var _hooks = require('@liquidrainbowpony/hooks');
 
 function _getRequireWildcardCache() {
   if (typeof WeakMap !== 'function') return null;

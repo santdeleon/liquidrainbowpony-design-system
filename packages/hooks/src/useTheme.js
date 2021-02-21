@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ThemeContext } from '@liquidrainbow/theme';
+import { ThemeContext } from '@liquidrainbowpony/theme';
 
 const useTheme = () => {
   const context = useContext(ThemeContext);

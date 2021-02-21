@@ -1,3 +1,5 @@
+'use strict';
+
 function _typeof(obj) {
   '@babel/helpers - typeof';
   if (typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol') {

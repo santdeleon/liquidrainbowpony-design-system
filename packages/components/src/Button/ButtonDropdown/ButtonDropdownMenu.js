@@ -1,7 +1,7 @@
 import React, { createRef } from 'react';
 import { oneOfType, string, func, object, array, bool } from 'prop-types';
 import styled from 'styled-components';
-import { useOnClickOutside } from '@liquidrainbow/hooks';
+import { useOnClickOutside } from '@liquidrainbowpony/hooks';
 
 const StyledButtonDropdownMenu = styled.div`
   outline: 0;

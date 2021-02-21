@@ -21,9 +21,6 @@
     "build:tokens": "node \"./src/index.js\"",
     "build:style-dictionary": "style-dictionary build"
   },
-  "publishConfig": {
-    "access": "private"
-  },
   "devDependencies": {
     "dotenv": "^8.2.0",
     "node-fetch": "^2.6.1",
