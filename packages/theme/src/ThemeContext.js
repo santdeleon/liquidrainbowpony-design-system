@@ -6,7 +6,7 @@ import { useLocalStorage } from '@liquidrainbowpony/hooks';
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const prefersOSDarkTheme = window?.matchMedia('(prefers-color-scheme: dark)');
+  const prefersOSDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
   const [theme, setTheme] = useLocalStorage(
     'theme',
     prefersOSDarkTheme ? 'dark' : 'light',

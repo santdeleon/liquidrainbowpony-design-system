@@ -148,7 +148,7 @@ exports.ThemeContext = ThemeContext;
 
 var ThemeProvider = function ThemeProvider(_ref) {
   var children = _ref.children;
-  var prefersOSDarkTheme = window?.matchMedia('(prefers-color-scheme: dark)');
+  var prefersOSDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
   var _useLocalStorage = (0, _hooks.useLocalStorage)(
       'theme',

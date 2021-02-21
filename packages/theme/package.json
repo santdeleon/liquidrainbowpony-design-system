@@ -2,6 +2,9 @@
   "author": "Santiago Deleon <sant@santdeleon.io>",
   "name": "@liquidrainbowpony/theme",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "private"
+  },
   "description": "The Liquidrainbowpony theme.",
   "keywords": [
     "@liquidrainbowpony",
@@ -16,11 +19,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": ">=17.0.1"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

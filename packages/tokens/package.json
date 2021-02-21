@@ -1,8 +1,11 @@
 {
-  "name": "@liquidrainbowpony/tokens",
-  "version": "0.5.2",
-  "description": "The Liquidrainbowpony Design System token library.",
   "author": "Santiago Deleon <sant@santdeleon.io>",
+  "name": "@liquidrainbowpony/tokens",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "private"
+  },
+  "description": "The Liquidrainbowpony Design System token library.",
   "keywords": [
     "@liquidrainbowpony",
     "@liquidrainbowpony/tokens",
