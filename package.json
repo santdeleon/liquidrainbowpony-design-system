@@ -1,6 +1,6 @@
 {
   "author": "Santiago Deleon <sant@santdeleon.io>",
-  "name": "@liquidrainbowpony/liquidrainbowpony",
+  "name": "liquidrainbowpony",
   "version": "1.0.0",
   "publishConfig": {
     "access": "private"
