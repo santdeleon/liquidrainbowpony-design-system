@@ -34,5 +34,4 @@ OverlayTrigger.propTypes = {
   overlay: oneOfType([array, object, string, func]).isRequired,
   children: oneOfType([array, object, string, func]).isRequired,
 };
-
 export default OverlayTrigger;

@@ -11,25 +11,25 @@ Object.defineProperty(exports, 'ButtonDropdown', {
     return _ButtonDropdown['default'];
   },
 });
-Object.defineProperty(exports, 'ButtonDropdownMenu', {
-  enumerable: true,
-  get: function get() {
-    return _ButtonDropdownMenu['default'];
-  },
-});
 Object.defineProperty(exports, 'ButtonDropdownLink', {
   enumerable: true,
   get: function get() {
     return _ButtonDropdownLink['default'];
   },
 });
+Object.defineProperty(exports, 'ButtonDropdownMenu', {
+  enumerable: true,
+  get: function get() {
+    return _ButtonDropdownMenu['default'];
+  },
+});
 
 var _ButtonDropdown = _interopRequireDefault(require('./ButtonDropdown'));
 
-var _ButtonDropdownMenu = _interopRequireDefault(
-  require('./ButtonDropdownMenu'),
-);
-
 var _ButtonDropdownLink = _interopRequireDefault(
   require('./ButtonDropdownLink'),
+);
+
+var _ButtonDropdownMenu = _interopRequireDefault(
+  require('./ButtonDropdownMenu'),
 );

@@ -5,7 +5,7 @@ var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-exports['default'] = exports.AutoColumn = void 0;
+exports['default'] = void 0;
 
 var _taggedTemplateLiteral2 = _interopRequireDefault(
   require('@babel/runtime/helpers/taggedTemplateLiteral'),
@@ -13,7 +13,7 @@ var _taggedTemplateLiteral2 = _interopRequireDefault(
 
 var _styledComponents = _interopRequireDefault(require('styled-components'));
 
-var _templateObject, _templateObject2;
+var _templateObject;
 
 var Column = _styledComponents['default'].div(
   _templateObject ||
@@ -42,38 +42,5 @@ var Column = _styledComponents['default'].div(
   },
 );
 
-var AutoColumn = _styledComponents['default'].div(
-  _templateObject2 ||
-    (_templateObject2 = (0, _taggedTemplateLiteral2['default'])([
-      '\n  display: grid;\n  grid-auto-rows: auto;\n  grid-row-gap: ',
-      ';\n  justify-items: ',
-      ';\n  margin: ',
-      ';\n  padding: ',
-      ';\n',
-    ])),
-  function (_ref5) {
-    var gap = _ref5.gap;
-    return (
-      (gap === 'sm' && 'var(--spacer-size-300-rem)') ||
-      (gap === 'md' && 'var(--spacer-size-400-rem)') ||
-      (gap === 'lg' && 'var(--spacer-size-500-rem)') ||
-      gap
-    );
-  },
-  function (_ref6) {
-    var justify = _ref6.justify;
-    return justify && justify;
-  },
-  function (_ref7) {
-    var margin = _ref7.margin;
-    return margin && margin;
-  },
-  function (_ref8) {
-    var padding = _ref8.padding;
-    return padding && padding;
-  },
-);
-
-exports.AutoColumn = AutoColumn;
 var _default = Column;
 exports['default'] = _default;

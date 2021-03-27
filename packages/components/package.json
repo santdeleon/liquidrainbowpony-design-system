@@ -1,9 +1,10 @@
 {
   "author": "Santiago Deleon <sant@santdeleon.io>",
+  "license": "MIT",
   "name": "@liquidrainbowpony/components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publishConfig": {
-    "access": "private"
+    "access": "public"
   },
   "description": "The Liquidrainbowpony component library.",
   "keywords": [

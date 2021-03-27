@@ -24,9 +24,7 @@ var Navbar = _styledComponents['default'].header(
       ';\n  margin: ',
       ';\n  position: ',
       ';\n  top: ',
-      ';\n  right: ',
       ';\n  bottom: ',
-      ';\n  left: ',
       ';\n',
     ])),
   function (_ref) {
@@ -41,7 +39,7 @@ var Navbar = _styledComponents['default'].header(
     var padding = _ref3.padding;
     return padding
       ? padding
-      : 'var(--spacer-size-350-rem) var(--spacer-size-0-rem)';
+      : 'var(--spacer-size-400-rem) var(--spacer-size-0-rem)';
   },
   function (_ref4) {
     var margin = _ref4.margin;
@@ -62,20 +60,8 @@ var Navbar = _styledComponents['default'].header(
   function (_ref7) {
     var fixed = _ref7.fixed,
       sticky = _ref7.sticky;
-    if ((fixed && fixed !== 'none') || (sticky && sticky !== 'none'))
-      return 'var(--spacer-size-0-rem)';
-  },
-  function (_ref8) {
-    var fixed = _ref8.fixed,
-      sticky = _ref8.sticky;
     if (fixed && fixed === 'bottom') return 'var(--spacer-size-0-rem)';
     if (sticky && sticky === 'bottom') return 'var(--spacer-size-0-rem)';
-  },
-  function (_ref9) {
-    var fixed = _ref9.fixed,
-      sticky = _ref9.sticky;
-    if ((fixed && fixed !== 'none') || (sticky && sticky !== 'none'))
-      return 'var(--spacer-size-0-rem)';
   },
 );
 

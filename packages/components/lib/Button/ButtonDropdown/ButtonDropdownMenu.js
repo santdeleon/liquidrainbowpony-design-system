@@ -27,7 +27,7 @@ var _propTypes = require('prop-types');
 
 var _styledComponents = _interopRequireDefault(require('styled-components'));
 
-var _hooks = require('@liquidrainbowpony/hooks');
+var _hooks = require('../../../hooks');
 
 var _templateObject;
 

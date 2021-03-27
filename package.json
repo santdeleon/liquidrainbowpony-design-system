@@ -1,9 +1,10 @@
 {
   "author": "Santiago Deleon <sant@santdeleon.io>",
+  "license": "MIT",
   "name": "liquidrainbowpony",
   "version": "1.0.0",
   "publishConfig": {
-    "access": "private"
+    "access": "public"
   },
   "description": "The Liquidrainbowpony Design System.",
   "repository": {

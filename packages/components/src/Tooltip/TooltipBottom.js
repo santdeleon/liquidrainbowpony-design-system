@@ -30,7 +30,7 @@ const TooltipBottom = styled(Tooltip)`
     border-color: ${({ theme }) =>
       theme.mode === 'dark'
         ? 'transparent transparent var(--color-neutral-900) transparent'
-        : 'transparent transparent  var(--color-neutral-0) transparent'};
+        : 'transparent transparent var(--color-neutral-0) transparent'};
   }
 `;
 

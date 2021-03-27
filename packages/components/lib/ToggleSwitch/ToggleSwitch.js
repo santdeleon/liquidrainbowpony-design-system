@@ -36,23 +36,39 @@ var StyledToggleSwitch = _styledComponents['default'].div(
       ' {\n    border-style: solid;\n    border-width: 0.1875rem;\n    border-color: ',
       ';\n    background-color: ',
       ';\n  }\n  ',
-      ' {\n    transform: ',
-      ';\n    border-style: solid;\n    border-width: 0.1875rem;\n    border-color: ',
+      ' {\n    border-style: solid;\n    border-width: 0.1875rem;\n    transform: ',
+      ';\n    border-color: ',
       ';\n    background-color: ',
       ';\n  }\n',
     ])),
   _.ToggleTrack,
   function (_ref) {
-    var on = _ref.on;
-    return on === 'true'
-      ? 'var(--color-green-900)'
-      : 'var(--color-neutral-400)';
+    var on = _ref.on,
+      isThemeToggle = _ref.isThemeToggle;
+
+    if (isThemeToggle) {
+      return on === 'true'
+        ? 'var(--color-purple-1000)'
+        : 'var(--color-neutral-900)';
+    } else {
+      return on === 'true'
+        ? 'var(--color-green-900)'
+        : 'var(--color-neutral-400)';
+    }
   },
   function (_ref2) {
-    var on = _ref2.on;
-    return on === 'true'
-      ? 'var(--color-green-1000)'
-      : 'var(--color-neutral-200)';
+    var on = _ref2.on,
+      isThemeToggle = _ref2.isThemeToggle;
+
+    if (isThemeToggle) {
+      return on === 'true'
+        ? 'var(--color-purple-1100)'
+        : 'var(--color-neutral-700)';
+    } else {
+      return on === 'true'
+        ? 'var(--color-green-1000)'
+        : 'var(--color-neutral-200)';
+    }
   },
   _.ToggleThumb,
   function (_ref3) {
@@ -60,14 +76,32 @@ var StyledToggleSwitch = _styledComponents['default'].div(
     return on === 'true' ? 'translateX(18px)' : 'translateX(-2px)';
   },
   function (_ref4) {
-    var on = _ref4.on;
-    return on === 'true'
-      ? 'var(--color-green-900)'
-      : 'var(--color-neutral-400)';
+    var on = _ref4.on,
+      isThemeToggle = _ref4.isThemeToggle;
+
+    if (isThemeToggle) {
+      return on === 'true'
+        ? 'var(--color-purple-900)'
+        : 'var(--color-neutral-900)';
+    } else {
+      return on === 'true'
+        ? 'var(--color-green-900)'
+        : 'var(--color-neutral-400)';
+    }
   },
   function (_ref5) {
-    var on = _ref5.on;
-    return on === 'true' ? 'var(--color-green-700)' : 'var(--color-neutral-0)';
+    var on = _ref5.on,
+      isThemeToggle = _ref5.isThemeToggle;
+
+    if (isThemeToggle) {
+      return on === 'true'
+        ? 'var(--color-purple-900)'
+        : 'var(--color-neutral-900)';
+    } else {
+      return on === 'true'
+        ? 'var(--color-green-700)'
+        : 'var(--color-neutral-0)';
+    }
   },
 );
 

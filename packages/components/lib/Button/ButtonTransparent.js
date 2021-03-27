@@ -45,7 +45,7 @@ var ButtonTransparent = (0, _styledComponents['default'])(
   },
   function (_ref3) {
     var theme = _ref3.theme;
-    return theme.mode === 'dark' ? 'transparent' : 'var(--color-neutral-800)';
+    return theme.mode === 'dark' ? 'transparent' : 'var(--color-neutral-1100)';
   },
   function (_ref4) {
     var theme = _ref4.theme;

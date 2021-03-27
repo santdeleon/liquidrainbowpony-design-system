@@ -1,7 +1,5 @@
 'use strict';
 
-var _interopRequireWildcard = require('@babel/runtime/helpers/interopRequireWildcard');
-
 var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
 
 Object.defineProperty(exports, '__esModule', {
@@ -28,7 +26,7 @@ Object.defineProperty(exports, 'Column', {
 Object.defineProperty(exports, 'AutoColumn', {
   enumerable: true,
   get: function get() {
-    return _Column.AutoColumn;
+    return _AutoColumn['default'];
   },
 });
 
@@ -36,4 +34,6 @@ var _Container = _interopRequireDefault(require('./Container'));
 
 var _Row = _interopRequireDefault(require('./Row'));
 
-var _Column = _interopRequireWildcard(require('./Column'));
+var _Column = _interopRequireDefault(require('./Column'));
+
+var _AutoColumn = _interopRequireDefault(require('./AutoColumn'));

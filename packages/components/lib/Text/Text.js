@@ -29,6 +29,7 @@ var propTypes = {
     _propTypes.object,
     _propTypes.string,
     _propTypes.func,
+    _propTypes.number,
   ]),
 };
 

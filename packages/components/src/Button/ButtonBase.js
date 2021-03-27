@@ -10,12 +10,17 @@ const ButtonBase = styled.button`
   width: ${({ size }) => size && size === 'block' && '100%'};
   font-size: ${({ size }) => {
     if (size === 'sm') return 'var(--typography-size-100-rem)';
-    if (!size || size === 'md') return 'var(--typography-size-200-rem)';
-    if (size === 'lg' || size === 'block')
-      return 'var(--typography-size-400-rem)';
+    if (!size || size === 'md' || size === 'block')
+      return 'var(--typography-size-200-rem)';
+    if (size === 'lg') return 'var(--typography-size-300-rem)';
   }};
-  font-weight: var(--typography-weight-medium);
-  line-height: 1.5;
+  font-weight: var(--typography-weight-bold);
+  line-height: ${({ size }) => {
+    if (size === 'sm') return 'var(--typography-size-100-line-height)';
+    if (!size || size === 'md' || size === 'block')
+      return 'var(--typography-size-200-line-height)';
+    if (size === 'lg') return 'var(--typography-size-300-line-height)';
+  }};
   text-align: center;
   text-decoration: none;
   vertical-align: middle;

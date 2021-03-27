@@ -20,7 +20,7 @@ var _templateObject;
 var NavbarBrand = (0, _styledComponents['default'])(_reactRouterDom.Link)(
   _templateObject ||
     (_templateObject = (0, _taggedTemplateLiteral2['default'])([
-      '\n  display: flex;\n  font-size: var(--typography-size-700-rem);\n  font-weight: var(--typography-weight-medium);\n  text-decoration: none;\n  color: ',
+      '\n  display: flex;\n  font-size: var(--typography-size-700-rem);\n  font-weight: var(--typography-weight-bold);\n  text-decoration: none;\n  color: ',
       ';\n',
     ])),
   function (_ref) {

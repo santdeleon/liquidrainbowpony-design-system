@@ -2,8 +2,6 @@
 
 var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
 
-var _interopRequireWildcard = require('@babel/runtime/helpers/interopRequireWildcard');
-
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
@@ -25,7 +23,7 @@ var _react = _interopRequireDefault(require('react'));
 
 var _propTypes = require('prop-types');
 
-var _styledComponents = _interopRequireWildcard(require('styled-components'));
+var _styledComponents = _interopRequireDefault(require('styled-components'));
 
 var _templateObject;
 
@@ -93,7 +91,5 @@ var Tooltip = function Tooltip(_ref5) {
 };
 
 Tooltip.propTypes = propTypes;
-
-var _default = (0, _styledComponents.withTheme)(Tooltip);
-
+var _default = Tooltip;
 exports['default'] = _default;

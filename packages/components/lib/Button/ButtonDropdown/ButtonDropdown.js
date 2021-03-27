@@ -22,7 +22,8 @@ var ButtonDropdown = (0, _styledComponents['default'])(_ButtonBase['default'])(
     (_templateObject = (0, _taggedTemplateLiteral2['default'])([
       '\n  z-index: 2;\n  font-size: var(--typography-size-300-rem);\n  padding: ',
       ';\n  color: ',
-      ";\n  background-color: transparent;\n  border: 0;\n  box-shadow: none;\n  &:hover {\n    color: var(--color-pink-700);\n  }\n  &:focus {\n    outline: 0;\n  }\n  &:active {\n    transform: translateY(0);\n  }\n  &:after {\n    content: ' \u25BE';\n    color: ",
+      ';\n  background-color: transparent;\n  border: 0;\n  box-shadow: none;\n  &:hover {\n    color: ',
+      ";\n  }\n  &:focus {\n    outline: 0;\n  }\n  &:active {\n    transform: translateY(0);\n  }\n  &:after {\n    content: '';\n    color: ",
       ';\n  }\n',
     ])),
   function (_ref) {
@@ -43,6 +44,12 @@ var ButtonDropdown = (0, _styledComponents['default'])(_ButtonBase['default'])(
   },
   function (_ref3) {
     var theme = _ref3.theme;
+    return theme.mode === 'light'
+      ? 'var(--color-neutral-1100)'
+      : 'var(--color-neutral-0)';
+  },
+  function (_ref4) {
+    var theme = _ref4.theme;
     return theme.mode === 'dark'
       ? 'var(--color-neutral-100)'
       : 'var(--color-neutral-900)';

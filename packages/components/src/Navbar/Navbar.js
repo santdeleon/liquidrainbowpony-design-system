@@ -5,7 +5,7 @@ const Navbar = styled.header`
   align-items: ${({ align }) => (align ? align : 'center')};
   justify-content: ${({ justify }) => (justify ? justify : 'flex-start')};
   padding: ${({ padding }) =>
-    padding ? padding : 'var(--spacer-size-350-rem) var(--spacer-size-0-rem)'};
+    padding ? padding : 'var(--spacer-size-400-rem) var(--spacer-size-0-rem)'};
   margin: ${({ margin }) => margin && margin};
   position: ${({ fixed, sticky }) => {
     if (fixed && fixed !== 'none') return 'fixed';
@@ -15,17 +15,9 @@ const Navbar = styled.header`
     if (fixed && fixed === 'top') return 'var(--spacer-size-0-rem)';
     if (sticky && sticky === 'top') return 'var(--spacer-size-0-rem)';
   }};
-  right: ${({ fixed, sticky }) => {
-    if ((fixed && fixed !== 'none') || (sticky && sticky !== 'none'))
-      return 'var(--spacer-size-0-rem)';
-  }};
   bottom: ${({ fixed, sticky }) => {
     if (fixed && fixed === 'bottom') return 'var(--spacer-size-0-rem)';
     if (sticky && sticky === 'bottom') return 'var(--spacer-size-0-rem)';
-  }};
-  left: ${({ fixed, sticky }) => {
-    if ((fixed && fixed !== 'none') || (sticky && sticky !== 'none'))
-      return 'var(--spacer-size-0-rem)';
   }};
 `;
 

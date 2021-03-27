@@ -21,8 +21,9 @@ var NavLink = (0, _styledComponents['default'])(_reactRouterDom.Link)(
   _templateObject ||
     (_templateObject = (0, _taggedTemplateLiteral2['default'])([
       '\n  margin: ',
-      ';\n  font-size: var(--typography-size-300-rem);\n  font-weight: var(--typography-weight-medium);\n  text-decoration: none;\n  color: ',
-      ';\n  &:hover {\n    color: var(--color-pink-700);\n  }\n',
+      ';\n  font-size: var(--typography-size-300-rem);\n  font-weight: var(--typography-weight-bold);\n  text-decoration: none;\n  color: ',
+      ';\n  transition: color 0.2s ease-out;\n  &:hover {\n    color: ',
+      '\n',
     ])),
   function (_ref) {
     var margin = _ref.margin;
@@ -31,13 +32,33 @@ var NavLink = (0, _styledComponents['default'])(_reactRouterDom.Link)(
       : 'var(--spacer-size-0-rem) var(--spacer-size-350-rem)';
   },
   function (_ref2) {
-    var active = _ref2.active,
-      theme = _ref2.theme;
+    var theme = _ref2.theme,
+      disabled = _ref2.disabled,
+      active = _ref2.active;
     if (active === 'true') return 'var(--color-pink-700)';
-    else {
+
+    if (disabled) {
+      return theme.mode === 'light'
+        ? 'rgba(0, 0, 0, 0.2)'
+        : 'rgba(300, 300, 300, 0.3)';
+    } else {
       return theme.mode === 'dark'
         ? 'var(--color-neutral-600)'
         : 'var(--color-neutral-700)';
+    }
+  },
+  function (_ref3) {
+    var theme = _ref3.theme,
+      active = _ref3.active;
+
+    if (theme.mode === 'light') {
+      return active === 'true'
+        ? 'var(--color-pink-700)'
+        : 'var(--color-neutral-900)';
+    } else {
+      return active === 'true'
+        ? 'var(--color-pink-700)'
+        : 'var(--color-neutral-100)';
     }
   },
 );

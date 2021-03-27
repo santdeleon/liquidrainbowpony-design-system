@@ -27,19 +27,23 @@ var P = _styledComponents['default'].p(
     var fontWeight = _ref.fontWeight;
     return fontWeight
       ? 'var(--typography-weight-'.concat(fontWeight, ')')
-      : 'var(--typography-weight-normal)';
+      : 'var(--typography-weight-regular)';
   },
   function (_ref2) {
     var margin = _ref2.margin;
     return margin
       ? margin
-      : 'var(--spacer-size-0-rem) var(--spacer-size-0-rem) var(--spacer-size-200-rem) var(--spacer-size-0-rem)';
+      : 'var(--spacer-size-0-rem) var(--spacer-size-0-rem) var(--spacer-size-300-rem) var(--spacer-size-0-rem)';
   },
   function (_ref3) {
-    var theme = _ref3.theme;
-    return theme.mode === 'dark'
-      ? 'var(--color-neutral-600)'
-      : 'var(--color-neutral-700)';
+    var theme = _ref3.theme,
+      color = _ref3.color;
+    if (color) return color;
+    else {
+      return theme.mode === 'dark'
+        ? 'var(--color-neutral-600)'
+        : 'var(--color-neutral-700)';
+    }
   },
 );
 

@@ -179,6 +179,42 @@ Object.defineProperty(exports, 'AutoColumn', {
     return _Grid.AutoColumn;
   },
 });
+Object.defineProperty(exports, 'Table', {
+  enumerable: true,
+  get: function get() {
+    return _Table.Table;
+  },
+});
+Object.defineProperty(exports, 'TableHead', {
+  enumerable: true,
+  get: function get() {
+    return _Table.TableHead;
+  },
+});
+Object.defineProperty(exports, 'TableBody', {
+  enumerable: true,
+  get: function get() {
+    return _Table.TableBody;
+  },
+});
+Object.defineProperty(exports, 'TableHeader', {
+  enumerable: true,
+  get: function get() {
+    return _Table.TableHeader;
+  },
+});
+Object.defineProperty(exports, 'TableRow', {
+  enumerable: true,
+  get: function get() {
+    return _Table.TableRow;
+  },
+});
+Object.defineProperty(exports, 'TableData', {
+  enumerable: true,
+  get: function get() {
+    return _Table.TableData;
+  },
+});
 Object.defineProperty(exports, 'Text', {
   enumerable: true,
   get: function get() {
@@ -201,12 +237,6 @@ Object.defineProperty(exports, 'ToggleTrack', {
   enumerable: true,
   get: function get() {
     return _ToggleSwitch.ToggleTrack;
-  },
-});
-Object.defineProperty(exports, 'Tooltip', {
-  enumerable: true,
-  get: function get() {
-    return _Tooltip.Tooltip;
   },
 });
 Object.defineProperty(exports, 'TooltipTop', {
@@ -259,6 +289,8 @@ var _Modal = require('./Modal');
 var _Navbar = require('./Navbar');
 
 var _Grid = require('./Grid');
+
+var _Table = require('./Table');
 
 var _Text = require('./Text');
 

@@ -23,7 +23,8 @@ var ButtonBase = _styledComponents['default'].button(
       ';\n  margin: ',
       ';\n  width: ',
       ';\n  font-size: ',
-      ';\n  font-weight: var(--typography-weight-medium);\n  line-height: 1.5;\n  text-align: center;\n  text-decoration: none;\n  vertical-align: middle;\n  border-style: solid;\n  -webkit-border-radius: 0.5rem;\n  -moz-border-radius: 0.5rem;\n  border-radius: 0.5rem;\n  border-width: 0.125rem;\n  border-color: var(--color-neutral-200);\n  box-shadow: 0 0.125rem 0 0 var(--color-neutral-200);\n  overflow: visible;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  transform: translateY(0);\n  &:focus {\n    outline: none;\n  }\n  &:active {\n    box-shadow: 0 0 0 0 var(--color-neutral-200);\n    transform: translateY(0.14rem);\n  }\n  &:disabled {\n    opacity: 50%;\n    pointer-events: none;\n  }\n',
+      ';\n  font-weight: var(--typography-weight-bold);\n  line-height: ',
+      ';\n  text-align: center;\n  text-decoration: none;\n  vertical-align: middle;\n  border-style: solid;\n  -webkit-border-radius: 0.5rem;\n  -moz-border-radius: 0.5rem;\n  border-radius: 0.5rem;\n  border-width: 0.125rem;\n  border-color: var(--color-neutral-200);\n  box-shadow: 0 0.125rem 0 0 var(--color-neutral-200);\n  overflow: visible;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  transform: translateY(0);\n  &:focus {\n    outline: none;\n  }\n  &:active {\n    box-shadow: 0 0 0 0 var(--color-neutral-200);\n    transform: translateY(0.14rem);\n  }\n  &:disabled {\n    opacity: 50%;\n    pointer-events: none;\n  }\n',
     ])),
   function (_ref) {
     var size = _ref.size;
@@ -44,9 +45,16 @@ var ButtonBase = _styledComponents['default'].button(
   function (_ref5) {
     var size = _ref5.size;
     if (size === 'sm') return 'var(--typography-size-100-rem)';
-    if (!size || size === 'md') return 'var(--typography-size-200-rem)';
-    if (size === 'lg' || size === 'block')
-      return 'var(--typography-size-400-rem)';
+    if (!size || size === 'md' || size === 'block')
+      return 'var(--typography-size-200-rem)';
+    if (size === 'lg') return 'var(--typography-size-300-rem)';
+  },
+  function (_ref6) {
+    var size = _ref6.size;
+    if (size === 'sm') return 'var(--typography-size-100-line-height)';
+    if (!size || size === 'md' || size === 'block')
+      return 'var(--typography-size-200-line-height)';
+    if (size === 'lg') return 'var(--typography-size-300-line-height)';
   },
 );
 

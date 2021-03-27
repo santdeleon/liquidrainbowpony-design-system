@@ -1,27 +1,23 @@
 'use strict';
 
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
 Object.defineProperty(exports, 'GlobalStyles', {
   enumerable: true,
   get: function get() {
-    return _globalStyles.GlobalStyles;
+    return _globalStyles['default'];
   },
 });
-Object.defineProperty(exports, 'ThemeProvider', {
+Object.defineProperty(exports, 'media', {
   enumerable: true,
   get: function get() {
-    return _ThemeContext.ThemeProvider;
-  },
-});
-Object.defineProperty(exports, 'ThemeContext', {
-  enumerable: true,
-  get: function get() {
-    return _ThemeContext.ThemeContext;
+    return _media['default'];
   },
 });
 
-var _globalStyles = require('./globalStyles');
+var _globalStyles = _interopRequireDefault(require('./globalStyles'));
 
-var _ThemeContext = require('./ThemeContext');
+var _media = _interopRequireDefault(require('./media'));

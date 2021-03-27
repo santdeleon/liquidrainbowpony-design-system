@@ -15,7 +15,7 @@ const ButtonTransparent = styled(ButtonBase)`
   box-shadow: none;
   &:hover {
     color: ${({ theme }) =>
-      theme.mode === 'dark' ? 'transparent' : 'var(--color-neutral-800)'};
+      theme.mode === 'dark' ? 'transparent' : 'var(--color-neutral-1100)'};
     background: ${({ theme }) =>
       theme.mode === 'dark'
         ? 'linear-gradient(to right,#e92b2b, #ff9600, #ffc800, #6adb55, #50cce2, #bc3ede, #ff4dd3)'

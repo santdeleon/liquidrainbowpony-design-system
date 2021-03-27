@@ -9,20 +9,56 @@ const StyledToggleSwitch = styled.div`
   ${ToggleTrack} {
     border-style: solid;
     border-width: 0.1875rem;
-    border-color: ${({ on }) =>
-      on === 'true' ? 'var(--color-green-900)' : 'var(--color-neutral-400)'};
-    background-color: ${({ on }) =>
-      on === 'true' ? 'var(--color-green-1000)' : 'var(--color-neutral-200)'};
+    border-color: ${({ on, isThemeToggle }) => {
+      if (isThemeToggle) {
+        return on === 'true'
+          ? 'var(--color-purple-1000)'
+          : 'var(--color-neutral-900)';
+      } else {
+        return on === 'true'
+          ? 'var(--color-green-900)'
+          : 'var(--color-neutral-400)';
+      }
+    }};
+    background-color: ${({ on, isThemeToggle }) => {
+      if (isThemeToggle) {
+        return on === 'true'
+          ? 'var(--color-purple-1100)'
+          : 'var(--color-neutral-700)';
+      } else {
+        return on === 'true'
+          ? 'var(--color-green-1000)'
+          : 'var(--color-neutral-200)';
+      }
+    }};
   }
   ${ToggleThumb} {
-    transform: ${({ on }) =>
-      on === 'true' ? 'translateX(18px)' : 'translateX(-2px)'};
     border-style: solid;
     border-width: 0.1875rem;
-    border-color: ${({ on }) =>
-      on === 'true' ? 'var(--color-green-900)' : 'var(--color-neutral-400)'};
-    background-color: ${({ on }) =>
-      on === 'true' ? 'var(--color-green-700)' : 'var(--color-neutral-0)'};
+    transform: ${({ on }) =>
+      on === 'true' ? 'translateX(18px)' : 'translateX(-2px)'};
+    border-color: ${({ on, isThemeToggle }) => {
+      if (isThemeToggle) {
+        return on === 'true'
+          ? 'var(--color-purple-900)'
+          : 'var(--color-neutral-900)';
+      } else {
+        return on === 'true'
+          ? 'var(--color-green-900)'
+          : 'var(--color-neutral-400)';
+      }
+    }};
+    background-color: ${({ on, isThemeToggle }) => {
+      if (isThemeToggle) {
+        return on === 'true'
+          ? 'var(--color-purple-900)'
+          : 'var(--color-neutral-900)';
+      } else {
+        return on === 'true'
+          ? 'var(--color-green-700)'
+          : 'var(--color-neutral-0)';
+      }
+    }};
   }
 `;
 

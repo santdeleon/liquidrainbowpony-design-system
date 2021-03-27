@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NavbarBrand = styled(Link)`
   display: flex;
   font-size: var(--typography-size-700-rem);
-  font-weight: var(--typography-weight-medium);
+  font-weight: var(--typography-weight-bold);
   text-decoration: none;
   color: ${({ theme }) =>
     theme.mode === 'dark'

@@ -41,25 +41,25 @@ var ButtonSecondary = (0, _styledComponents['default'])(_ButtonBase['default'])(
   function (_ref2) {
     var theme = _ref2.theme;
     return theme.mode === 'dark'
-      ? 'var(--color-neutral-800)'
+      ? 'var(--color-neutral-900)'
       : 'var(--color-neutral-0)';
   },
   function (_ref3) {
     var theme = _ref3.theme;
     return theme.mode === 'dark'
-      ? 'var(--color-neutral-900)'
+      ? 'var(--color-neutral-1100)'
       : 'var(--color-neutral-200)';
   },
   function (_ref4) {
     var theme = _ref4.theme;
     return theme.mode === 'dark'
-      ? '0 0.125rem 0 0 var(--color-neutral-900)'
+      ? '0 0.125rem 0 0 var(--color-neutral-1100)'
       : '0 0.125rem 0 0 var(--color-neutral-200)';
   },
   function (_ref5) {
     var theme = _ref5.theme;
     return theme.mode === 'dark'
-      ? 'var(--color-neutral-900)'
+      ? 'var(--color-neutral-1000)'
       : 'var(--color-neutral-200)';
   },
   function (_ref6) {
@@ -77,7 +77,7 @@ var ButtonSecondary = (0, _styledComponents['default'])(_ButtonBase['default'])(
   function (_ref8) {
     var theme = _ref8.theme;
     return theme.mode === 'dark'
-      ? 'var(--color-neutral-900)'
+      ? 'var(--color-neutral-1000)'
       : 'var(--color-neutral-200)';
   },
   function (_ref9) {

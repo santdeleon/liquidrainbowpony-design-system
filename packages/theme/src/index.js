@@ -1,4 +1,2 @@
-import { GlobalStyles } from './globalStyles';
-import { ThemeProvider, ThemeContext } from './ThemeContext';
-
-export { GlobalStyles, ThemeProvider, ThemeContext };
+export { default as GlobalStyles } from './globalStyles';
+export { default as media } from './media';

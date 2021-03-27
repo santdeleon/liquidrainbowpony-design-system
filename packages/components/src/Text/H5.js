@@ -5,16 +5,20 @@ const H5 = styled.h5`
   font-weight: ${({ fontWeight }) =>
     fontWeight
       ? `var(--typography-weight-${fontWeight})`
-      : 'var(--typography-weight-semibold)'};
+      : 'var(--typography-weight-bold)'};
   line-height: 'var(--typography-size-500-line-height)';
   margin: ${({ margin }) =>
     margin
       ? margin
-      : 'var(--spacer-size-0-rem) var(--spacer-size-0-rem) var(--spacer-size-200-rem) var(--spacer-size-0-rem)'};
-  color: ${({ theme }) =>
-    theme.mode === 'dark'
-      ? 'var(--color-neutral-100)'
-      : 'var(--color-neutral-900)'};
+      : 'var(--spacer-size-0-rem) var(--spacer-size-0-rem) var(--spacer-size-300-rem) var(--spacer-size-0-rem)'};
+  color: ${({ theme, color }) => {
+    if (color) return color;
+    else {
+      return theme.mode === 'dark'
+        ? 'var(--color-neutral-100)'
+        : 'var(--color-neutral-900)';
+    }
+  }};
 `;
 
 export default H5;

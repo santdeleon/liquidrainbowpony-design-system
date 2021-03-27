@@ -19,7 +19,7 @@ import {
 const propTypes = {
   fontSize: number,
   fontWeight: string,
-  children: oneOfType([array, object, string, func]),
+  children: oneOfType([array, object, string, func, number]),
 };
 
 const Text = ({ fontSize, fontWeight, children, ...props }) => {

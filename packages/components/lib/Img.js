@@ -23,6 +23,7 @@ var Img = _styledComponents['default'].img(
       ';\n  height: ',
       ';\n  margin: ',
       ';\n  border-radius: ',
+      ';\n  box-shadow: ',
       ';\n',
     ])),
   function (_ref) {
@@ -48,6 +49,10 @@ var Img = _styledComponents['default'].img(
   function (_ref5) {
     var borderRadius = _ref5.borderRadius;
     return borderRadius && borderRadius;
+  },
+  function (_ref6) {
+    var boxShadow = _ref6.boxShadow;
+    return boxShadow && boxShadow;
   },
 );
 

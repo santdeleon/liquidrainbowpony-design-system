@@ -19,7 +19,10 @@ const ButtonDropdown = styled(ButtonBase)`
   border: 0;
   box-shadow: none;
   &:hover {
-    color: var(--color-pink-700);
+    color: ${({ theme }) =>
+      theme.mode === 'light'
+        ? 'var(--color-neutral-1100)'
+        : 'var(--color-neutral-0)'};
   }
   &:focus {
     outline: 0;
@@ -28,7 +31,7 @@ const ButtonDropdown = styled(ButtonBase)`
     transform: translateY(0);
   }
   &:after {
-    content: ' ▾';
+    content: '';
     color: ${({ theme }) =>
       theme.mode === 'dark'
         ? 'var(--color-neutral-100)'

@@ -8,21 +8,22 @@ const ButtonDropdownLink = styled(Link)`
   padding: ${({ padding }) =>
     padding ? padding : 'var(--spacer-size-400-rem) var(--spacer-size-0-rem)'};
   font-size: var(--typography-size-300-rem);
-  font-weight: var(--typography-weight-medium);
+  font-weight: var(--typography-weight-bold);
   text-decoration: none;
   color: ${({ theme }) =>
     theme.mode === 'dark'
       ? 'var(--color-neutral-100)'
       : 'var(--color-neutral-900)'};
-  color: ${({ active }) => active && 'var(--color-pink-700)'};
+  color: ${({ active }) => active === 'true' && 'var(--color-pink-700)'};
   background-color: ${({ active, theme }) => {
-    if (!active) return null;
+    if (active === 'false') return null;
     else {
-      return active && theme.mode === 'dark'
+      return active === 'true' && theme.mode === 'dark'
         ? 'var(--color-neutral-1000)'
         : 'var(--color-neutral-100)';
     }
   }};
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
   &:hover {
     background-color: ${({ theme }) =>
       theme.mode === 'dark'

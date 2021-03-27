@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, array, object, oneOfType, func } from 'prop-types';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 
 const TooltipBase = styled.span`
   visibility: hidden;
@@ -42,4 +42,4 @@ const Tooltip = ({ ariaLabel, children, ...props }) => (
 );
 
 Tooltip.propTypes = propTypes;
-export default withTheme(Tooltip);
+export default Tooltip;

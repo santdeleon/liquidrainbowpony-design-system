@@ -34,7 +34,7 @@ var TooltipBottom = (0, _styledComponents['default'])(_Tooltip['default'])(
     var theme = _ref2.theme;
     return theme.mode === 'dark'
       ? 'transparent transparent var(--color-neutral-900) transparent'
-      : 'transparent transparent  var(--color-neutral-0) transparent';
+      : 'transparent transparent var(--color-neutral-0) transparent';
   },
 );
 var _default = TooltipBottom;

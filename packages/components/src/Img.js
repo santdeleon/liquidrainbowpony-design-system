@@ -12,6 +12,7 @@ const Img = styled.img`
   }};
   margin: ${({ margin }) => margin && margin};
   border-radius: ${({ borderRadius }) => borderRadius && borderRadius};
+  box-shadow: ${({ boxShadow }) => boxShadow && boxShadow};
 `;
 
 export default Img;

@@ -1,4 +1,3 @@
-export { default as Tooltip } from './Tooltip';
 export { default as TooltipTop } from './TooltipTop';
 export { default as TooltipRight } from './TooltipRight';
 export { default as TooltipBottom } from './TooltipBottom';

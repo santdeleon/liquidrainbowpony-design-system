@@ -5,12 +5,6 @@ var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, '__esModule', {
   value: true,
 });
-Object.defineProperty(exports, 'Tooltip', {
-  enumerable: true,
-  get: function get() {
-    return _Tooltip['default'];
-  },
-});
 Object.defineProperty(exports, 'TooltipTop', {
   enumerable: true,
   get: function get() {
@@ -47,8 +41,6 @@ Object.defineProperty(exports, 'OverlayTrigger', {
     return _OverlayTrigger['default'];
   },
 });
-
-var _Tooltip = _interopRequireDefault(require('./Tooltip'));
 
 var _TooltipTop = _interopRequireDefault(require('./TooltipTop'));
 

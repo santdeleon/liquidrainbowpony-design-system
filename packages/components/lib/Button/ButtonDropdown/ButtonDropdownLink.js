@@ -25,10 +25,10 @@ var ButtonDropdownLink = (0, _styledComponents['default'])(
       '\n  display: flex;\n  justify-content: ',
       ';\n  align-items: ',
       ';\n  padding: ',
-      ';\n  font-size: var(--typography-size-300-rem);\n  font-weight: var(--typography-weight-medium);\n  text-decoration: none;\n  color: ',
+      ';\n  font-size: var(--typography-size-300-rem);\n  font-weight: var(--typography-weight-bold);\n  text-decoration: none;\n  color: ',
       ';\n  color: ',
       ';\n  background-color: ',
-      ';\n  &:hover {\n    background-color: ',
+      ';\n  transition: color 0.2s ease-out, background-color 0.2s ease-out;\n  &:hover {\n    background-color: ',
       ';\n  }\n  &:not(:first-child) {\n    border-style: solid;\n    border-color: ',
       ';\n    border-width: 0.125rem 0 0 0;\n  }\n  &:first-child {\n    border-radius: 0.4rem 0.4rem 0 0;\n  }\n  &:last-child {\n    border-radius: 0 0 0.4rem 0.4rem;\n  }\n',
     ])),
@@ -54,14 +54,14 @@ var ButtonDropdownLink = (0, _styledComponents['default'])(
   },
   function (_ref5) {
     var active = _ref5.active;
-    return active && 'var(--color-pink-700)';
+    return active === 'true' && 'var(--color-pink-700)';
   },
   function (_ref6) {
     var active = _ref6.active,
       theme = _ref6.theme;
-    if (!active) return null;
+    if (active === 'false') return null;
     else {
-      return active && theme.mode === 'dark'
+      return active === 'true' && theme.mode === 'dark'
         ? 'var(--color-neutral-1000)'
         : 'var(--color-neutral-100)';
     }

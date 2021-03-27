@@ -25,10 +25,17 @@ import {
 } from './Modal';
 import { Navbar, NavbarBrand, Nav, NavLink } from './Navbar';
 import { Container, Row, Column, AutoColumn } from './Grid';
+import {
+  Table,
+  TableHead,
+  TableBody,
+  TableHeader,
+  TableRow,
+  TableData,
+} from './Table';
 import { Text } from './Text';
 import { ToggleSwitch, ToggleThumb, ToggleTrack } from './ToggleSwitch';
 import {
-  Tooltip,
   TooltipTop,
   TooltipRight,
   TooltipBottom,
@@ -67,11 +74,16 @@ export {
   NavLink,
   OverlayTrigger,
   Row,
+  Table,
+  TableHead,
+  TableBody,
+  TableHeader,
+  TableRow,
+  TableData,
   Text,
   ToggleSwitch,
   ToggleThumb,
   ToggleTrack,
-  Tooltip,
   TooltipTop,
   TooltipRight,
   TooltipBottom,

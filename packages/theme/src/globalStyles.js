@@ -1,12 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
 
   html, input, textarea, button {
-    font-family: var(--typography-family-calibre), var(--typography-family-sf-pro-display), var(--typography-family-helvetica-neue), var(--typography-family-helvetica), system;
+    font-family: var(--typography-family-din-round-pro), var(--typography-family-sf-pro-display), var(--typography-family-helvetica-neue), var(--typography-family-helvetica), system;
     font-display: fallback;
   }
 
@@ -22,7 +22,6 @@ export const GlobalStyles = createGlobalStyle`
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   body {
@@ -34,19 +33,19 @@ export const GlobalStyles = createGlobalStyle`
       theme.mode === 'dark'
         ? 'var(--color-neutral-1000)'
         : 'var(--color-neutral-0)'};
-      border-width: 6px 0 0 0;
-      border-style: solid;
-      border-image-slice: 1;
-      border-image-source: linear-gradient(
-        to right,
-        #e92b2b,
-        #ff9600,
-        #ffc800,
-        #6adb55,
-        #50cce2,
-        #bc3ede,
-        #ff4dd3
-      );
+    border-width: 6px 0 0 0;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to right,
+      #e92b2b,
+      #ff9600,
+      #ffc800,
+      #6adb55,
+      #50cce2,
+      #bc3ede,
+      #ff4dd3
+    );
   }
 
   ul {
@@ -76,3 +75,5 @@ export const GlobalStyles = createGlobalStyle`
     background: rgba(255, 77, 211, 0.3);
   }
 `;
+
+export default GlobalStyles;
